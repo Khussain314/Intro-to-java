@@ -23,7 +23,6 @@ public class Exercise_04 {
 
 	public static void reverse(int number) {
 		int reverse = 0;
-        
         while (number != 0) {
 			reverse *= 10;
             reverse += number % 10;
