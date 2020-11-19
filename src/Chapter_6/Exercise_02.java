@@ -27,24 +27,13 @@ public class Exercise_02 {
 	}
 
 	public static int sumDigits(long n){
-		int digit = 0; //for digit in loop for
 		int sum = 0;
-		long a = n;  //for loop while
 
-		while(true){
-			if(a/10 != 0){
-				digit += 1;
-				a /= 10;
-			}else{
-				digit +=1;
-				break;
-			}
-		}
-
-		for(int i=0; i<digit; i++){
-			sum += n% 10;
-			n /= 10;	
-		}
+		while(n != 0){
+			sum += n%10;
+			n /= 10;
+		}	
+		
 		return sum;
 	}
 }

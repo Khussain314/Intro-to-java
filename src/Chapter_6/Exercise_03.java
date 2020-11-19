@@ -26,10 +26,9 @@ public class Exercise_03 {
 	}
 
 	public static int reverse(int number) {
-		int n = 0;  //for loop for2
-		int number2 = number; // for loop while
-		int reverse = 0;  // for loop for2
-		int a = 1;   // for loop for
+		int n = 0; 
+		int number2 = number; 
+		int reverse = 0; 
 		
 		while(true){
 			if(number2/10 != 0){
@@ -41,14 +40,12 @@ public class Exercise_03 {
 			}
 		}
 
-		for(int i=0; i<(n-1); i++){
-			a *= 10;
-		}
+		double a = Math.pow(10, (n-1));
 
-		for(int i=0; i<n; i++){      // loop for2
-			reverse += (number % 10) * a;
+		for(int i=0; i<n; i++){ 
+			reverse *= 10;
+			reverse += (number % 10);
 			number /= 10;
-			a /= 10;
 		}
 
 		return reverse;
