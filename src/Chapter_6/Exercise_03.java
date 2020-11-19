@@ -40,8 +40,6 @@ public class Exercise_03 {
 			}
 		}
 
-		double a = Math.pow(10, (n-1));
-
 		for(int i=0; i<n; i++){ 
 			reverse *= 10;
 			reverse += (number % 10);
