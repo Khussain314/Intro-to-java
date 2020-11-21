@@ -15,7 +15,7 @@ public class Exercise_07 {
 
 		double futurevalue = 0;
 
-		System.out.printf("%3s%20s\n", "Years", "Future Value");
+		System.out.printf("%1s%20s\n", "Years", "Future Value");
 		for(int i=0; i<=years; i++){
 			
 			System.out.printf("%-4d%20.2f\n", i, futureInvestmentValue(investmentAmount, monthlyInterestRate, i));
