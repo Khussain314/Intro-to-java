@@ -14,13 +14,9 @@ public class Exercise_20 {
 		for (int i = 0; i < s.length(); i++) {
 
             char ch = s.charAt(i);
-            if (isLetter(ch)) charCount++;
+            ch = Character.toUpperCase(ch);
+            if ((ch >= 'A' && ch <= 'Z')) charCount++;
         }
         return charCount;
 	}
-
-	public static boolean isLetter(char ch) {
-        ch = Character.toUpperCase(ch);
-        return (ch >= 'A' && ch <= 'Z');
-    }
 }
